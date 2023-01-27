@@ -9,5 +9,5 @@
 
 [[redirects]]
   from="/*"
-  to="/.netlify/functions/server.js"
+  to="/.netlify/dist/server.js"
   status=200
