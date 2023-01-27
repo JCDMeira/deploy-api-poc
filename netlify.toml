@@ -2,7 +2,7 @@
   node_bundler = "esbuild"
 
 [build]
-  functions="functions"
+  functions="dist"
 
 [dev]
   publish = "dist"
