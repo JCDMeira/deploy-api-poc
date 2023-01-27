@@ -1,0 +1,23 @@
+{
+  "name": "deploy-api-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production nodemon server.js",
+    "dev": "NODE_ENV=development nodemon server.js",
+    "build": "./node_modules/.bin/netlify-lambda build ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sucrase": "^3.29.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "netlify-lambda": "^2.0.15"
+  }
+}
