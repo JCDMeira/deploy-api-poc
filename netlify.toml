@@ -8,6 +8,6 @@
   publish = "dist"
 
 [[redirects]]
-  to="/.netlify/functions/api/:splat"
+  to="/.netlify/functions/server/:splat"
   from="/*"
   status=200
