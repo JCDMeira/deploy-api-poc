@@ -2,12 +2,12 @@
   node_bundler = "esbuild"
 
 [build]
-  functions="dist"
+  functions="functions"
 
 [dev]
   publish = "dist"
 
 [[redirects]]
   from="/*"
-  to="/.netlify/dist/server.js"
+  to="/.netlify/functions/api:splat"
   status=200

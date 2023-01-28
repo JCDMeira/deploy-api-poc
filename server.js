@@ -6,7 +6,7 @@ app.use(express.json());
 
 const routes = express.Router();
 
-routes.get("/teste", (req, res) =>
+routes.get("api/teste", (req, res) =>
   res.status(200).json({ message: "hello world" })
 );
 
