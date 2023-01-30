@@ -9,6 +9,6 @@ const router = express.Router();
 router.get("/", (req, res) => res.status(200).json({ message: "hello world" }));
 
 app.use(router);
-app.use(`/.netlify/functions/server`, router);
+app.use(`/.netlify/functions/api`, router);
 
 app.listen("3333", () => console.log("online"));
