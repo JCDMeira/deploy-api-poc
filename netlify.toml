@@ -1,13 +1,6 @@
-[functions]
-  node_bundler = "esbuild"
-
 [build]
+  command = "npm run build"
   functions="functions"
 
 [dev]
-  publish = "dist"
-
-[[redirects]]
-  from="/*"
-  to="/.netlify/functions/api:splat"
-  status=200
+  command = "npm run start"
