@@ -4,12 +4,13 @@ const app = express();
 
 app.use(express.json());
 
-const routes = express.Router();
+const router = express.Router();
 
-routes.get("api/teste", (req, res) =>
+router.get("api/teste", (req, res) =>
   res.status(200).json({ message: "hello world" })
 );
 
-app.use(routes);
+app.use(router);
+app.use(`/.netlify/functions/server`, router);
 
 app.listen("3333", () => console.log("online"));
