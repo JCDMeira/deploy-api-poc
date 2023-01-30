@@ -6,9 +6,7 @@ app.use(express.json());
 
 const router = express.Router();
 
-router.get("/api/teste", (req, res) =>
-  res.status(200).json({ message: "hello world" })
-);
+router.get("/", (req, res) => res.status(200).json({ message: "hello world" }));
 
 app.use(router);
 app.use(`/.netlify/functions/server`, router);
